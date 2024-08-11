@@ -21,12 +21,12 @@
 
 ## 文件说明
 
-顶层文件为Freq_Meas.v
+顶层文件为[Freq_Meas.v](Freq_Meas.v)。
 
-模块连接方式见FrequencyMeter RTL.pdf
+模块连接方式见[FrequencyMeter RTL.pdf]()。
 
 详见代码注释
 
 ## 联系方式
 
-如有任何问题或建议，请联系 [CLDSea](2530626334@qq.com)。
+如有任何问题或建议，请联系[CLDSea](2530626334@qq.com)。
