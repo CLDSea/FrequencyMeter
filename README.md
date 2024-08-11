@@ -21,9 +21,9 @@
 
 ## 文件说明
 
-顶层文件为[Freq_Meas.v](FrequencyMeter/Freq_Meas.v)。
+顶层文件为[Freq_Meas.v](FrequencyMeter/Freq_Meas.v)
 
-模块连接方式见[FrequencyMeter RTL.pdf]()。
+模块连接方式见[FrequencyMeter RTL.pdf](FrequencyMeter RTL.pdf)
 
 详见代码注释
 
