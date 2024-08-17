@@ -14,6 +14,7 @@ module Sq_Sig_Filter
 // win_len为0不进行滤波
 // win_len过小可能对噪声的抑制不充分
 // win_len过大会导致高频信号跳变被当做噪声抑制
+// win_len一般可选取2e+06 / freq
 
 // wire
 
