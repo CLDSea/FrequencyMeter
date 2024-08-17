@@ -127,7 +127,7 @@ Freq_Meas_Gate #(CNT_THRESH)Freq_Meas_Gate_inst
                (
                    .clk_100M(clk_100M) ,
                    .rst_n(rst_n) ,
-                   .meas_rst() ,
+		   .meas_rst(1'd0) ,
                    .sig(sig_undiv_filter) ,
                    .cnt_s(cnt_s_undiv) ,
                    .cnt_x(cnt_x_undiv) ,
