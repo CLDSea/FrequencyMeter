@@ -1,32 +1,37 @@
 module Sync_Chain
        (
-           input clk_100M,
+           // 同步时钟
+           input clk,
+           // 复位信号
            input rst_n,
-
+           
+           // 输入信号
            input sig,
-
+           
+           // 同步信号
            output reg sig_sync
        );
-
-// 同步链，锁存输入两次，防止亚稳态
-// 多用于随机产生的异步信号
+       
+// 锁存两次，防止亚稳态
+// 多用于异步信号
 
 // wire
 
 // reg
-reg sig_reg;
+reg sig_temp;
 
-always@(posedge clk_100M or negedge rst_n)
+// 锁存
+always@(posedge clk or negedge rst_n)
 begin
 	if (!rst_n)
 	begin
-		sig_reg <= 1'd0;
+		sig_temp <= 1'd0;
 		sig_sync <= 1'd0;
 	end
 	else
 	begin
-		sig_reg <= sig;
-		sig_sync <= sig_reg;
+		sig_temp <= sig;
+		sig_sync <= sig_temp;
 	end
 end
 
